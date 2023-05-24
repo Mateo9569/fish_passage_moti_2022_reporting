@@ -182,8 +182,8 @@ my_caption1 = paste0('Habitat downstream of PSCIS crossing ', my_site, ', on Bit
 ```
 
 ```{r photo-196200-01, fig.cap= my_caption1, out.width = photo_width, eval=gitbook_on}
-knitr::include_graphics(my_photo1)
-# grid::grid.raster(jpeg::readJPEG(my_photo1))
+#knitr::include_graphics(my_photo1)
+grid::grid.raster(jpeg::readJPEG(my_photo1))
 
 ```
 
@@ -198,8 +198,8 @@ my_caption2 = paste0('Habitat downstream of PSCIS crossing ', my_site, ', on Bit
 
 ```{r photo-196200-02, fig.cap= my_caption2, out.width = photo_width, eval=gitbook_on}
 
-knitr::include_graphics(my_photo2)
-# grid::grid.raster(jpeg::readJPEG(my_photo2))
+#knitr::include_graphics(my_photo2)
+grid::grid.raster(jpeg::readJPEG(my_photo2))
 
 ```
 
