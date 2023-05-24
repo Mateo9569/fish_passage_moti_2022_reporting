@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3 Methods | Effectiveness Monitoring for Cross Creek, Bittner Creek and Five Mile Creek - 2022</title>
   <meta name="description" content="Reporting for 2022 Fish Passage Restoration Planning Assessments in the Elk River watershed group." />
-  <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3 Methods | Effectiveness Monitoring for Cross Creek, Bittner Creek and Five Mile Creek - 2022" />
   <meta property="og:type" content="book" />
@@ -147,6 +147,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
 <style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
 /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
 div.csl-bib-body { }
 div.csl-entry {
@@ -250,10 +254,10 @@ div.csl-indent {
 <h2><span class="header-section-number">3.1</span> Fish Passage Assessments<a href="methods.html#fish-passage-assessments" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In the field, crossings prioritized for follow-up were first assessed for fish passage following the procedures outlined in “Field Assessment for Determining Fish Passage Status of Closed Bottomed Structures” <span class="citation">(MoE 2011a)</span>. Crossings surveyed included closed bottom structures (CBS), open bottom structures (OBS) and crossings considered “other” (i.e. fords). Photos were taken at surveyed crossings and when possible included images of the road, crossing inlet, crossing outlet, crossing barrel, channel downstream and channel upstream of the crossing and any other relevant features. The following information was recorded for all surveyed crossings: date of inspection, crossing reference, crew member initials, Universal Transverse Mercator (UTM) coordinates, stream name, road name and kilometer, road tenure information, crossing type, crossing subtype, culvert diameter or span for OBS, culvert length or width for OBS. A more detailed “full assessment” was completed for all closed bottom structures and included the following parameters: presence/absence of continuous culvert embedment (yes/no), average depth of embedment, whether or not the culvert bed resembled the native stream bed, presence of and percentage backwatering, fill depth, outlet drop, outlet pool depth, inlet drop, culvert slope, average downstream channel width, stream slope, presence/absence of beaver activity, presence/absence of fish at time of survey, type of valley fill, and a habitat value rating. Habitat value ratings were based on channel morphology, flow characteristics (perennial, intermittent, ephemeral), fish migration patterns, the presence/absence of deep pools, un-embedded boulders, substrate, woody debris, undercut banks, aquatic vegetation and overhanging riparian vegetation (Table <a href="methods.html#tab:tab-hab-value">3.1</a>). For crossings determined to be potential barriers or barriers based on the data (see <a href="methods.html#barrier-scoring">Barrier Scoring</a>), a culvert fix and recommended diameter/span was proposed.</p>
 <p><br></p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="methods.html#cb6-1" tabindex="-1"></a>fpr<span class="sc">::</span>fpr_table_habvalue <span class="sc">%&gt;%</span> </span>
-<span id="cb6-2"><a href="methods.html#cb6-2" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">caption =</span> <span class="st">&#39;Habitat value criteria (Fish Passage Technical Working Group, 2011).&#39;</span>, <span class="at">booktabs =</span> T) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-3"><a href="methods.html#cb6-3" tabindex="-1"></a>    kableExtra<span class="sc">::</span><span class="fu">column_spec</span>(<span class="at">column =</span> <span class="dv">1</span>, <span class="at">width_min =</span> <span class="st">&#39;1.5in&#39;</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-4"><a href="methods.html#cb6-4" tabindex="-1"></a>    kableExtra<span class="sc">::</span><span class="fu">kable_styling</span>(<span class="fu">c</span>(<span class="st">&quot;condensed&quot;</span>), <span class="at">full_width =</span> T, <span class="at">font_size =</span> font_set) </span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="methods.html#cb6-1" aria-hidden="true" tabindex="-1"></a>fpr<span class="sc">::</span>fpr_table_habvalue <span class="sc">%&gt;%</span> </span>
+<span id="cb6-2"><a href="methods.html#cb6-2" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">caption =</span> <span class="st">&#39;Habitat value criteria (Fish Passage Technical Working Group, 2011).&#39;</span>, <span class="at">booktabs =</span> T) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-3"><a href="methods.html#cb6-3" aria-hidden="true" tabindex="-1"></a>    kableExtra<span class="sc">::</span><span class="fu">column_spec</span>(<span class="at">column =</span> <span class="dv">1</span>, <span class="at">width_min =</span> <span class="st">&#39;1.5in&#39;</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-4"><a href="methods.html#cb6-4" aria-hidden="true" tabindex="-1"></a>    kableExtra<span class="sc">::</span><span class="fu">kable_styling</span>(<span class="fu">c</span>(<span class="st">&quot;condensed&quot;</span>), <span class="at">full_width =</span> T, <span class="at">font_size =</span> font_set) </span></code></pre></div>
 <table class="table table-condensed" style="font-size: 11px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
 <span id="tab:tab-hab-value">Table 3.1: </span>Habitat value criteria (Fish Passage Technical Working Group, 2011).
@@ -300,15 +304,15 @@ No suitable spawning habitat, and habitat with low rearing potential (e.g., loca
 <h3><span class="header-section-number">3.1.1</span> Barrier Scoring<a href="methods.html#barrier-scoring" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Fish passage potential was determined for each stream crossing identified as a closed bottom structure as per <span class="citation">MoE (2011a)</span>. The combined scores from five criteria: depth and degree to which the structure is embedded, outlet drop, stream width ratio, culvert slope, and culvert length were used to screen whether each culvert was a likely barrier to some fish species and life stages (Table <a href="methods.html#tab:tab-barrier-scoring">3.2</a>, Table <a href="methods.html#tab:tab-barrier-result">3.3</a>. These criteria were developed based on data obtained from various studies and reflect an estimation for the passage of a juvenile salmon or small resident rainbow trout <span class="citation">(Clarkin et al. 2005 ; Bell 1991; Thompson 2013)</span>.</p>
 <p><br></p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="methods.html#cb7-1" tabindex="-1"></a>tab <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(<span class="fu">t</span>(fpr_table_barrier_scoring)) <span class="sc">%&gt;%</span> </span>
-<span id="cb7-2"><a href="methods.html#cb7-2" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">V4 =</span> <span class="fu">names</span>(fpr_table_barrier_scoring)) <span class="sc">%&gt;%</span> </span>
-<span id="cb7-3"><a href="methods.html#cb7-3" tabindex="-1"></a>  <span class="fu">select</span>(V4, <span class="fu">everything</span>()) <span class="sc">%&gt;%</span> </span>
-<span id="cb7-4"><a href="methods.html#cb7-4" tabindex="-1"></a>  janitor<span class="sc">::</span><span class="fu">row_to_names</span>(<span class="dv">1</span>) <span class="sc">%&gt;%</span>  <span class="do">##turn the table sideways</span></span>
-<span id="cb7-5"><a href="methods.html#cb7-5" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Risk =</span> <span class="fu">case_when</span>(Risk <span class="sc">==</span> <span class="st">&#39;Value&#39;</span> <span class="sc">~</span> <span class="st">&#39;  Value&#39;</span>,</span>
-<span id="cb7-6"><a href="methods.html#cb7-6" tabindex="-1"></a>                          T <span class="sc">~</span> Risk))</span>
-<span id="cb7-7"><a href="methods.html#cb7-7" tabindex="-1"></a></span>
-<span id="cb7-8"><a href="methods.html#cb7-8" tabindex="-1"></a>tab <span class="sc">%&gt;%</span> </span>
-<span id="cb7-9"><a href="methods.html#cb7-9" tabindex="-1"></a>  fpr<span class="sc">::</span><span class="fu">fpr_kable</span>(<span class="at">caption_text =</span> <span class="st">&#39;Fish Barrier Risk Assessment (MoE 2011).&#39;</span>, <span class="at">scroll =</span> F)</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="methods.html#cb7-1" aria-hidden="true" tabindex="-1"></a>tab <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(<span class="fu">t</span>(fpr_table_barrier_scoring)) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-2"><a href="methods.html#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">V4 =</span> <span class="fu">names</span>(fpr_table_barrier_scoring)) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-3"><a href="methods.html#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(V4, <span class="fu">everything</span>()) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-4"><a href="methods.html#cb7-4" aria-hidden="true" tabindex="-1"></a>  janitor<span class="sc">::</span><span class="fu">row_to_names</span>(<span class="dv">1</span>) <span class="sc">%&gt;%</span>  <span class="do">##turn the table sideways</span></span>
+<span id="cb7-5"><a href="methods.html#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Risk =</span> <span class="fu">case_when</span>(Risk <span class="sc">==</span> <span class="st">&#39;Value&#39;</span> <span class="sc">~</span> <span class="st">&#39;  Value&#39;</span>,</span>
+<span id="cb7-6"><a href="methods.html#cb7-6" aria-hidden="true" tabindex="-1"></a>                          T <span class="sc">~</span> Risk))</span>
+<span id="cb7-7"><a href="methods.html#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="methods.html#cb7-8" aria-hidden="true" tabindex="-1"></a>tab <span class="sc">%&gt;%</span> </span>
+<span id="cb7-9"><a href="methods.html#cb7-9" aria-hidden="true" tabindex="-1"></a>  fpr<span class="sc">::</span><span class="fu">fpr_kable</span>(<span class="at">caption_text =</span> <span class="st">&#39;Fish Barrier Risk Assessment (MoE 2011).&#39;</span>, <span class="at">scroll =</span> F)</span></code></pre></div>
 <table class="table table-condensed table-responsive" style="font-size: 11px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
 <span id="tab:tab-barrier-scoring">Table 3.2: </span>Fish Barrier Risk Assessment (MoE 2011).
@@ -473,8 +477,8 @@ Value
 </tbody>
 </table>
 <p><br></p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="methods.html#cb8-1" tabindex="-1"></a>fpr<span class="sc">::</span>fpr_table_barrier_result <span class="sc">%&gt;%</span> </span>
-<span id="cb8-2"><a href="methods.html#cb8-2" tabindex="-1"></a>  fpr<span class="sc">::</span><span class="fu">fpr_kable</span>(<span class="at">caption_text =</span> <span class="st">&#39;Fish Barrier Scoring Results (MoE 2011).&#39;</span>, <span class="at">scroll =</span> F) </span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="methods.html#cb8-1" aria-hidden="true" tabindex="-1"></a>fpr<span class="sc">::</span>fpr_table_barrier_result <span class="sc">%&gt;%</span> </span>
+<span id="cb8-2"><a href="methods.html#cb8-2" aria-hidden="true" tabindex="-1"></a>  fpr<span class="sc">::</span><span class="fu">fpr_kable</span>(<span class="at">caption_text =</span> <span class="st">&#39;Fish Barrier Scoring Results (MoE 2011).&#39;</span>, <span class="at">scroll =</span> F) </span></code></pre></div>
 <table class="table table-condensed table-responsive" style="font-size: 11px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
 <span id="tab:tab-barrier-result">Table 3.3: </span>Fish Barrier Scoring Results (MoE 2011).
@@ -526,12 +530,12 @@ barrier
 <div id="monitoring-metrics" class="section level2 hasAnchor" number="3.3">
 <h2><span class="header-section-number">3.3</span> Monitoring Metrics<a href="methods.html#monitoring-metrics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Custom monitoring metrics were adapted from forestinvestmentaccount2003 (Table <a href="results-and-discussion.html#tab:tab-monitor-sum">4.2</a>).</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="methods.html#cb9-1" tabindex="-1"></a>readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="st">&#39;data/form_monitoring_desc.csv&#39;</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb9-2"><a href="methods.html#cb9-2" tabindex="-1"></a> <span class="fu">mutate</span>(<span class="at">Parameter =</span> stringr<span class="sc">::</span><span class="fu">str_to_title</span>(Parameter)) <span class="sc">%&gt;%</span> </span>
-<span id="cb9-3"><a href="methods.html#cb9-3" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Parameter =</span> <span class="fu">case_when</span>( Parameter <span class="sc">==</span> <span class="st">&quot;Uav_flight&quot;</span> <span class="sc">~</span> <span class="st">&quot;UAV Flight&quot;</span>,</span>
-<span id="cb9-4"><a href="methods.html#cb9-4" tabindex="-1"></a>                                T <span class="sc">~</span> Parameter)) <span class="sc">%&gt;%</span> </span>
-<span id="cb9-5"><a href="methods.html#cb9-5" tabindex="-1"></a>  fpr<span class="sc">::</span><span class="fu">fpr_kable</span>(<span class="at">scroll =</span> F,</span>
-<span id="cb9-6"><a href="methods.html#cb9-6" tabindex="-1"></a>                 <span class="at">caption_text =</span> <span class="st">&#39;Description of monitoring metrics used for effectiveness monitoring.&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="methods.html#cb9-1" aria-hidden="true" tabindex="-1"></a>readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="st">&#39;data/form_monitoring_desc.csv&#39;</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-2"><a href="methods.html#cb9-2" aria-hidden="true" tabindex="-1"></a> <span class="fu">mutate</span>(<span class="at">Parameter =</span> stringr<span class="sc">::</span><span class="fu">str_to_title</span>(Parameter)) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-3"><a href="methods.html#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Parameter =</span> <span class="fu">case_when</span>( Parameter <span class="sc">==</span> <span class="st">&quot;Uav_flight&quot;</span> <span class="sc">~</span> <span class="st">&quot;UAV Flight&quot;</span>,</span>
+<span id="cb9-4"><a href="methods.html#cb9-4" aria-hidden="true" tabindex="-1"></a>                                T <span class="sc">~</span> Parameter)) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-5"><a href="methods.html#cb9-5" aria-hidden="true" tabindex="-1"></a>  fpr<span class="sc">::</span><span class="fu">fpr_kable</span>(<span class="at">scroll =</span> F,</span>
+<span id="cb9-6"><a href="methods.html#cb9-6" aria-hidden="true" tabindex="-1"></a>                 <span class="at">caption_text =</span> <span class="st">&#39;Description of monitoring metrics used for effectiveness monitoring.&#39;</span>)</span></code></pre></div>
 <table class="table table-condensed table-responsive" style="font-size: 11px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
 <span id="tab:tab-mon-metrics">Table 3.4: </span>Description of monitoring metrics used for effectiveness monitoring.
